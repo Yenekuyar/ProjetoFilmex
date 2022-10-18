@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@200&family=Titan+One&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carrossel.css">
     <title>Filmex</title>
 </head>
 <body>
@@ -22,7 +24,22 @@
             <ul class="lista-menu">
                 <li class="lista-menu__titulo">Categorias</li>
                 <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link"></a>
+                    <a href="#" class="lista-menu__link">Ação</a>
+                </li> 
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Terror</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Comédia</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Suspense</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Drama</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infantil</a>
                 </li>
             </ul>
 
@@ -32,13 +49,75 @@
 
             <h1 class="container__titulo" id="titulo">Filmex</h1>
 
-            <label for="menu" class="perfil">
-                <span class="perfil__imagem"></span>
-            </label>
+            <a href="##"><img src="/img/perfil-de-usuario.svg" alt="Ícone de Perfil do Usuário" class="usuario_perfil"></a>
         </div>
     </header>
     <main>
-        
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Filmassos</h2>
+            <div class="carrossel__container">
+                <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="" alt="" class=""></div>
+                <div class="swiper-slide"><img src="" alt="" class=""></div>
+                <div class="swiper-slide"><img src="" alt="" class=""></div>
+                <div class="swiper-slide"><img src="" alt="" class=""></div>
+                <div class="swiper-slide"><img src="" alt="" class=""></div>
+            </div>
+    
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
+            </div>
+            <!--1º coluna-->
+            <div class="card">
+                <!--1º coluna-->
+                <div class="card__descricao">
+                    <div class="descricao">
+                        <!-- 1º linha -->
+                        <div class="descricao__estrelas">
+                            <img src="" alt="" class="estrelas">
+                            <img src="" alt="" class="estrelas">
+                            <img src="" alt="" class="estrelas">
+                            <img src="" alt="" class="estrelas">
+                            <img src="" alt="" class="estrelas">
+                        </div>
+                    </div>
+                    <!--2º coluna-->
+                </div>
+                <!-- 2º linha -->
+                <div class="card__botoes">
+                    <!-- 1 coluna -->
+                    <ul class="botoes">
+                        <li class="botoes__item">
+                            <img src="" alt="">
+                        </li>
+                        <li class="botoes__item">
+                            <img src="" alt="">
+                        </li>
+                    </ul>
+                    <!-- 2 coluna -->
+                </div>
+            </div>
+            </div>        
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script>const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+          });
+        </script>
     </main>
 </body>
 </html>

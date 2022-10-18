@@ -13,10 +13,10 @@ body {
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
+    margin: 0 180px;
 }
 
 .cabecalho {
-    background-color: var(--cor-de-fundo);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,6 +44,7 @@ body {
     padding: 1.5em;
     margin: 0 1em;
     display: flex;
+    justify-content: space-between;
     border: 10px;
 }
 
@@ -54,17 +55,26 @@ body {
 .container {
     justify-content: space-between;
     display: flex;
+    width: 100%;
+    background-color: var(--cor-de-fundo);
 }
 
 .lista-menu {
     display: none;
     position: absolute;
     top: 100%;
-    width: 60vw;
+    width: 20%;
 }
 
 .container__botao:checked~.lista-menu {
     display: block;
+    background-color: var(--roxo-escuro);
+    color: var(--branco);
+    z-index: 1;
+}
+
+.container__botao:active {
+    background-color: var(--roxo-escuro);
 }
 
 .lista-menu__titulo {
@@ -75,7 +85,7 @@ body {
 .lista-menu__titulo,
 .lista-menu__item {
     padding: 1em;
-    background-color: var(--branco);
+    background-color: var(--roxo-escuro);
 }
 
 .lista-menu__link {
@@ -101,16 +111,14 @@ body {
     background-image: url('/img/menu-hamburguer-icon.svg');
 }
 
-.perfil__imagem {
-    background-image: url('/img/perfildeusuario.svg');
+.usuario_perfil {
+    width: 45px;
 }
 
-@media screen and (min-width: 1024px) {
-    .container__titulo,
-    .container__titulo--negrito {
-        font-family: var(--fonte-secundario);
-        font-size: 30px;
-    }
+.container__titulo,
+.container__titulo--negrito {
+    font-family: var(--fonte-secundario);
+    font-size: 30px;
 }
 
 .container__titulo {
@@ -153,24 +161,6 @@ body {
     display: none;
 }
 
-@media screen and (min-width: 1728px) {
-    .container__link {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        color: var(--preto);
-    }
-
-    .cabecalho {
-        padding: 0 2em;
-    }
-
-    .opcoes {
-        margin-right: auto;
-        margin-left: 3.5em;
-    }
-
-    .container__texto {
-        display: block;
-    }
+main {
+    background-color: var(--lilas);
 }
