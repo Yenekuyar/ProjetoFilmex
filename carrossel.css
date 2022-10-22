@@ -1,6 +1,13 @@
+@import url("styles.css");
+
+
+.carrosel {
+    width: 200px;
+}
+
 .carrossel__titulo {
     color: var(--laranja);
-    background-color: var(branco);
+    background-color: var(--brancobranco);
     text-align: center;
     text-transform: uppercase;
     font-size: 18px;
@@ -21,12 +28,6 @@
     margin: 0.5em 0;
 }
 
-.card__descricao {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.5em;
-}
-
 .card__botoes {
     display: flex;
     justify-content: space-between;
@@ -40,33 +41,26 @@
     background: var(--branco);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    margin: 1em;
+    margin: 5em;
     padding: 1em;
+    font-family: var(--fonte-principal);
+    color: var(--roxo);
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
 }
 
-.descricao {
-    margin-right: 0.5em;
-    line-height: 21px;
-}
-
-.descricao__titulo {
-    color: var(--laranja);
-    font-weight: 700;
-}
-
-.descricao__titulo-livro {
-    color: var(--azul);
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0.5em 0;
-}
-
-.descricao__texto {
-    font-size: 14px;
+.card__descricao {
+    text-align: center;
 }
 
 .botoes__item {
     margin: 0 0.5em;
+    width: 60px;
+}
+
+.imagem_card {
+    width: 100%;
 }
 
 .botoes__ancora {
@@ -77,9 +71,8 @@
     text-decoration: none;
 }
 
-@media screen and (min-width: 1024px) {
     .carrossel__titulo {
-        font-size: 26px;
+        font-size: 50px;
     }
 
     .swiper-pagination {
@@ -87,7 +80,7 @@
     }
 
     .swiper {
-        width: 60%;
+        width: 100%;
     }
 
     .swiper-button-prev,
@@ -96,16 +89,9 @@
         top: 60%;
     }
 
-    .card {
-        width: 40%;
-        margin: 2em auto;
-    }
-}
-
-@media screen and (min-width: 1728px) {
     .carrossel__container {
         display: flex;
-        margin: 0 20vw 3em 20vw;
+        margin: 1em 6em;
         align-items: center;
     }
 
@@ -113,28 +99,18 @@
         margin: 1em 0;
     }
 
-    .swiper {
-        width: 50%;
-    }
-
-    .card {
-        margin-top: 5em;
-        width: 60%;
-        margin-left: 3em;
+    
+    .card_titulo {
+        font-family: var(--fonte-principal);
+        margin: 1em 0;
+        font-size: 40px;
     }
 
     .descricao {
-        margin-right: 1em;
-    }
-    
-
-    .descricao__titulo {
-        font-size: 32px;
-        line-height: 1em;
+        width: 100%;
     }
 
-    .descricao__texto {
-        font-size: 16px;
-    }
-}
 
+    .swiper-image {
+        image-resolution: 400px 200px;
+    }
