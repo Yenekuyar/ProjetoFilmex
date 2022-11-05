@@ -1,11 +1,11 @@
 @import url("carrossel.css");
 
 :root {
-    --cor-de-fundo: #6D28FF;
+    --cor-de-fundo: #120a24;
     --cinza-escuro: #2E2E2E;
-    --roxo-escuro: #291E48;
-    --lilas: #A282FF;
-    --branco: #f1f1f1;  
+    --roxo-escuro: #090710;
+    --lilas: #1e1e1f;
+    --branco: #bbbbbb;  
 
     --fonte-principal: "Overpass";
     --fonte-secundaria: "Titan One";
@@ -15,7 +15,6 @@ body {
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
-    margin: 0 180px;
 }
 
 .cabecalho {

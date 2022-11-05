@@ -1,8 +1,8 @@
 @import url("styles.css");
 
 
-.carrosel {
-    width: 200px;
+.carrossel {
+    width: 100%;
 }
 
 .carrossel__titulo {
@@ -13,6 +13,7 @@
     font-size: 18px;
     font-weight: 700;
     padding: 1em 0 0.5em 0;
+    text-decoration: underline;
 }
 
 .swiper-slide img {
@@ -39,7 +40,7 @@
 
 .card {
     background: var(--branco);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     margin: 5em;
     padding: 1em;
@@ -73,6 +74,7 @@
 
     .carrossel__titulo {
         font-size: 50px;
+        color: var(--branco);
     }
 
     .swiper-pagination {
@@ -80,7 +82,8 @@
     }
 
     .swiper {
-        width: 100%;
+        width: 80%;
+        margin: 5em;
     }
 
     .swiper-button-prev,
@@ -93,6 +96,9 @@
         display: flex;
         margin: 1em 6em;
         align-items: center;
+        background-color: #111010;
+        border-radius: 24px;
+        box-shadow: 8px 8px 25px #000000, -0.5px -0.5px 10px #969494 inset;
     }
 
     .swiper-pagination {
