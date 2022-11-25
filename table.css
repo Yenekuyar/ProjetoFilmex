@@ -1,0 +1,85 @@
+.table__input {
+    background-color: var(--cinza-escuro);
+    color: var(--branco);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+    margin-left: 40%;
+    padding: 1em 0;
+    border-radius: 2em;
+    margin-top: 2em;
+    font-family: var(--fonte-secundaria);
+    border-style: double;
+    border-width: 2px;
+}
+
+.titulo__input {
+    padding: 0.5em 1em;
+}
+
+.botao__table {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    border-style: double;
+    border-width: 2px;
+    border-radius: 2em;
+    padding-left: 1em;
+    margin: 1em 3em 0 3.5em;
+}
+
+.box__input {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    border-radius: 0.5em;
+    border-width: 2px;
+    border-style: double;
+}
+
+.table__insert {
+    margin: 1em 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card__inserido {
+    background-color: var(--cinza-escuro);
+    color: var(--branco);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: var(--fonte-secundaria);
+    border-style: double;
+    border-width: 2px;
+    width: 100%;
+    flex-direction: column-reverse;
+    border-radius: 2em;
+}
+
+.card__linha {
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    column-gap: 2em;
+    column-rule-style: double;
+    justify-content: space-evenly;
+}
+
+.card__item {
+    padding: 0.5em;
+}
+
+.card__id {
+    display: none;
+}
+
+.edit, .delete {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    font-style: var(--fonte-primaria);
+    border-style: double;
+    border-width: 2px;
+    border-radius: 2em;
+    padding: 0.5em;
+    text-decoration: none;
+}

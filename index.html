@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@200&family=Titan+One&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="carrossel.css">
+    <title>Filmex</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container"> 
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="cabecalho__menu-hamburguer">
+                <span class="container__imagem"></span>
+            </label>
+            
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Ação</a>
+                </li> 
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Terror</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Comédia</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Suspense</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Drama</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infantil</a>
+                </li>
+            </ul>
+
+            <div class="cabecalho__pesquisa">
+                <input type="search" class="pesquisa" placeholder="Digite o filme:">
+            </div>
+
+            <h1 class="container__titulo" id="titulo">Filmex</h1>
+
+            <a href="##"><img src="/img/perfil-de-usuario.svg" alt="Ícone de Perfil do Usuário" class="usuario_perfil"></a>
+        </div>
+    </header>
+    <main>
+        <input type="hidden" id="hfRowIndex" value="" />
+        <table class="table__input">
+            <tr style="display: none;">
+                <td class="titulo__input">Id</td>
+                <td>
+                    <input type="text" name="Id" id="txtId" value="1" class="box__input"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="titulo__input">Nome do Filme</td>
+                <td>
+                    <input type="text" name="Nome" id="txtNome" value="" class="box__input"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="titulo__input">Nota</td>
+                <td>
+                    <input type="number" name="Nota" id="intNota" value="" class="box__input"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type='button' id='btnAdd' class="botao__table">Add</button>
+                    <button type='button' id='btnUpdate' style="display: none;" class="botao__table">Update</button>
+                </td>
+                <td>
+                    <button type='button' id='btnClear' class="botao__table">Clear</button>
+                </td>
+            </tr>
+        </table>
+        <table id="tblCustomers" class="table__insert">
+            <thead>
+                <tr style="display: none">
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Nota</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody class="card__inserido"></tbody>
+        </table>
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Terror Arrepiante</h2>
+            <div class="carrossel__container">
+                <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="/img/smile.jpeg" alt="Smile o Filme" class="swiper-image">
+                </div>
+                <div class="swiper-slide">
+                        <img src="/img/atividade-paranormal.jpg" alt="Atividade Paranormal" class="swiper-image">
+                </div>
+                <div class="swiper-slide">
+                        <img src="/img/bruxa-de-blair.jpg" alt="Atividade Paranormal" class="swiper-image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/bruxa-de-blair.jpg" alt="Bruxa de Blair" class="swiper-image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="" alt="" class="swiper-image">
+                </div>
+            </div>
+    
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
+            </div>
+            <!--1º coluna-->
+            <div class="card">
+                <!--1º coluna-->
+                <div class="card__descricao">
+                    <div class="descricao">
+                        <img src="img/telefone-preto.jpg" alt="" class="imagem_card">
+                        <h2 class="card_titulo">O Telefone Preto <hr>&#11088 &#11088 &#11088 &#11088 &#11088</h2>
+                        <p>Recomendação da Semana</p>
+                        <!-- 1º linha -->
+                    </div>
+                </div>
+            </div>
+            </div>        
+        </section>
+
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Comédias de Gargalhar</h2>
+            <div class="carrossel__container">
+                <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="/img/as-branquelas.jpeg" alt="As Branquelas" class="swiper-image">
+                </div>
+                <div class="swiper-slide">
+                        <img src="/img/click.jpg" alt="Click" class="swiper-image">
+                </div>
+                <div class="swiper-slide">
+                        <img src="/img/se-beber-nao-case.jpg" alt="Se Beber não Case" class="swiper-image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/superbad.png" alt="Superbad" class="swiper-image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/o-peso-do-talento.jpg" alt="O Peso do Talento" class="swiper-image">
+                </div>
+            </div>
+    
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
+            </div>
+            <!--1º coluna-->
+            <div class="card">
+                <!--1º coluna-->
+                <div class="card__descricao">
+                    <div class="descricao">
+                        <img src="img/o-peso-do-talento.jpg" alt="" class="imagem_card">
+                        <h2 class="card_titulo">O Peso do Talento<hr>&#11088 &#11088 &#11088 &#11088 &#11088</h2>
+                        <p>Recomendação da Semana</p>
+                        <!-- 1º linha -->
+                    </div>
+                </div>
+            </div>
+            </div>        
+        </section>
+
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Dramas para Chorar</h2>
+            <div class="carrossel__container">
+                <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="/img/smile.jpeg" alt="Smile o Filme" class="swiper-image"></div>
+                <div class="swiper-slide">
+                        <img src="/img/atividade-paranormal.jpg" alt="Atividade Paranormal" class="swiper-image">
+                </div>
+                <div class="swiper-slide">
+                        <img src="/img/bruxa-de-blair.jpg" alt="Atividade Paranormal" class="swiper-image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/bruxa-de-blair.jpg" alt="Bruxa de Blair" class="swiper-image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/img/halloween kills.jpg" alt="" class="swiper-image">
+                </div>
+            </div>
+    
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
+            </div>
+            <!--1º coluna-->
+            <div class="card">
+                <!--1º coluna-->
+                <div class="card__descricao">
+                    <div class="descricao">
+                        <img src="img/telefone-preto.jpg" alt="" class="imagem_card">
+                        <h2 class="card_titulo">O Telefone Preto<hr>&#11088 &#11088 &#11088 &#11088 &#11088</h2>
+                        <p>Recomendação da Semana</p>
+                        <!-- 1º linha -->
+                    </div>
+                </div>
+            </div>
+            </div>        
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script>const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+          });
+        </script>
+            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+            <script type="text/javascript" src="./script.js">
+                
+            </script>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
